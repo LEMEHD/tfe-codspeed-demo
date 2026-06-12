@@ -1,5 +1,7 @@
 # tfe-bench — Support de démonstration (défense TFE)
 
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://app.codspeed.io/LEMEHD/tfe-codspeed-demo?utm_source=badge)
+
 Dépôt de démonstration accompagnant le TFE *« Intégration du Continuous Benchmarking
 par Instruction Counting dans le pipeline CI/CD d'une plateforme SaaS de mobilité
 partagée »* (Mehdi Laghmich, ISFCE, 2025-2026).
