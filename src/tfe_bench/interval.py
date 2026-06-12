@@ -1,4 +1,4 @@
-"""Primitive Interval — extraite à l'identique de utils/interval.py du Monolit (MyMove).
+"""Primitive Interval — arithmétique d'intervalles temporels.
 
 Fonction cible du cas d'étude 4.2 du TFE (régression détectée sur Interval.subtract).
 """

@@ -4,12 +4,12 @@ Dépôt de démonstration accompagnant le TFE *« Intégration du Continuous Ben
 par Instruction Counting dans le pipeline CI/CD d'une plateforme SaaS de mobilité
 partagée »* (Mehdi Laghmich, ISFCE, 2025-2026).
 
-Le dépôt d'entreprise (Monolit, MyMove) n'étant plus accessible après la fin du stage,
-ce dépôt extrait les deux fonctions CPU-bound étudiées dans le TFE — `Interval`
-(cas d'étude 4.2) et `calculate_private_duration` (benchmarks S1) — afin de rejouer
-en conditions réelles le pipeline décrit au chapitre 3.4 : benchmarks pytest-codspeed,
-workflow GitHub Actions, détection automatique de régression sur PR, dashboard et
-flame graphs CodSpeed.
+Ce dépôt contient deux fonctions CPU-bound représentatives du domaine étudié
+dans le TFE — arithmétique d'intervalles temporels (cas d'étude 4.2) et calcul
+de durée tenant compte des heures de bureau (benchmarks S1) — afin de rejouer
+en conditions réelles le pipeline décrit au chapitre 3.4 : benchmarks
+pytest-codspeed, workflow GitHub Actions, détection automatique de régression
+sur PR, dashboard et flame graphs CodSpeed.
 
 ## Mise en place (une fois, ~15 min)
 
