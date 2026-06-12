@@ -1,0 +1,12 @@
+# Image pour la démo locale du mode Instruction Counting (Valgrind requis → Linux)
+# Build : docker build -f Dockerfile.bench -t tfe-bench .
+# Run   : docker run --rm tfe-bench
+FROM python:3.12-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends valgrind && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+COPY . .
+RUN pip install --no-cache-dir -e ".[dev]"
+
+CMD ["pytest", "tests/", "--codspeed"]
