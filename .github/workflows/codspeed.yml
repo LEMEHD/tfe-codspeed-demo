@@ -6,10 +6,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
   benchmarks:
     runs-on: ubuntu-latest
@@ -29,3 +25,4 @@ jobs:
         with:
           mode: simulation
           run: pytest tests/ --codspeed
+          token: ${{ secrets.CODSPEED_TOKEN }}
