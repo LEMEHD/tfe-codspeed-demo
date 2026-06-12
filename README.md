@@ -13,7 +13,7 @@ sur PR, dashboard et flame graphs CodSpeed.
 
 ## Mise en place (une fois, ~15 min)
 
-1. Sortir ce dossier du dépôt Monolit, puis `git init`, premier commit, pousser sur
+1. Sortir ce dossier du dépôt, puis `git init`, premier commit, pousser sur
    un dépôt GitHub **public** (ex. `tfe-codspeed-demo`).
 2. Sur [codspeed.io](https://codspeed.io), installer l'app GitHub sur ce dépôt.
 3. Copier le token CodSpeed dans les secrets du dépôt : `Settings → Secrets →
