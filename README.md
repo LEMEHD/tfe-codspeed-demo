@@ -13,14 +13,6 @@ en conditions réelles le pipeline décrit au chapitre 3.4 : benchmarks
 pytest-codspeed, workflow GitHub Actions, détection automatique de régression
 sur PR, dashboard et flame graphs CodSpeed.
 
-## Mise en place (une fois, ~15 min)
-
-1. Sortir ce dossier du dépôt, puis `git init`, premier commit, pousser sur
-   un dépôt GitHub **public** (ex. `tfe-codspeed-demo`).
-2. Sur [codspeed.io](https://codspeed.io), installer l'app GitHub sur ce dépôt.
-3. Copier le token CodSpeed dans les secrets du dépôt : `Settings → Secrets →
-   Actions → CODSPEED_TOKEN`.
-4. Pousser sur `main` (ou `workflow_dispatch`) → premier run = baseline sur le dashboard.
 
 ## Démo 1 — Déterminisme IC vs bruit Walltime (local)
 
