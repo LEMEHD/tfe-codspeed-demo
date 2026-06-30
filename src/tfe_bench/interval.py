@@ -4,7 +4,10 @@ Fonction cible du cas d'étude 4.2 du TFE (régression détectée sur Interval.s
 """
 
 import datetime
+import logging
 from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -25,6 +28,7 @@ class Interval:
         return other.start <= self.start <= self.end <= other.end
 
     def subtract(self, other: "Interval") -> "Interval | None":
+        logger.debug(f"subtracting {other} from {self}")
         if self == other:
             return None
         if self.is_inside(other):
